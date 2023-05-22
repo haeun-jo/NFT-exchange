@@ -1,0 +1,14 @@
+{
+  "liveSassCompile.settings.generateMap": false, // 만일 .map 파일 생성을 끄고 싶다면
+  "liveSassCompile.settings.includeItems": [
+    "/scss/ *.scss" // 어떤 경로에 있는 .scss파일만 컴파일할 것인지 설정
+  ],
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "~/../css" // 컴파일된 css 파일이 저장될 경로
+    }
+  ],
+  "liveSassCompile.settings.excludeList": ["**/node_modules/**", ".vscode/**"]
+}
