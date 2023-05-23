@@ -1,0 +1,65 @@
+.header {
+  width: 100%;
+  margin-bottom: 50px;
+  line-height: 30px;
+
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .logo {
+    float: left;
+    font-weight: 700;
+  }
+
+  .profile {
+    float: right;
+    position: relative;
+
+    &__image {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      background-color: #ddd;
+      border-radius: 50%;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+
+    &__btn {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-top: 2px solid #999;
+      border-right: 2px solid #999;
+      transform: rotate(135deg);
+      vertical-align: middle;
+    }
+
+    .dropdown {
+      position: absolute;
+      right: 0;
+      top: 40px;
+      width: 180px;
+      height: 80px;
+      padding: 10px 15px;
+      box-shadow: 0 0 20px #ddd;
+      border-radius: 5px;
+
+      p {
+        font-weight: 700;
+      }
+
+      &__connect-wallet {
+        width: 100%;
+        height: 30px;
+        background-color: #000;
+        color: #fff;
+        border-radius: 5px;
+        font-size: 12px;
+      }
+    }
+  }
+}
