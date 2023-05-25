@@ -1,8 +1,8 @@
 import { useState } from "react";
 
 const Profile = () => {
-  const [showDropdown, setShowDropdown] = useState<boolean>(false);
-  const [isConnect, setIsConnect] = useState<boolean>(false);
+  const [showDropdown, setShowDropdown] = useState<Boolean>(false);
+  const [isConnect, setIsConnect] = useState<Boolean>(false);
 
   return (
     <div className="profile">

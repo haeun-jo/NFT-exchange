@@ -1,11 +1,12 @@
 import { Route, Routes } from "react-router-dom";
-
 import { ROOT } from "./constants/path";
+
 import Header from "./components/Header";
 import Nav from "./components/Nav";
 import Collections from "./components/Collections";
 import All from "./components/All";
 import Singles from "./components/Singles";
+import Home from "./components/Home";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path={ROOT.COLLECTIONS} element={<Collections />} />
           <Route path={ROOT.SINGLES} element={<Singles />} />
         </Routes>
+        <Home />
       </div>
     </>
   );
